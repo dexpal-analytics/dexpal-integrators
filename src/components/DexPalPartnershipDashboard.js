@@ -90,6 +90,11 @@ const DexPalPartnershipDashboard = () => {
       icon: "⚙️",
     },
     {
+      id: "timeline",
+      label: "Timeline & Funding",
+      icon: "📅",
+    },
+    {
       id: "api",
       label: "API Requirements",
       icon: "🔌",
@@ -112,6 +117,7 @@ const DexPalPartnershipDashboard = () => {
     { id: "benefits", label: "Partner Benefits" },
     { id: "rewards", label: "Universal Rewards Program" },
     { id: "requirements", label: "Integration Requirements" },
+    { id: "timeline", label: "Timeline & Funding" },
     { id: "api", label: "API Requirements" },
     { id: "roadmap", label: "Product Roadmap" },
     { id: "contact", label: "Contact & Apply" },
@@ -191,14 +197,45 @@ const DexPalPartnershipDashboard = () => {
             What is DexPal?
           </h3>
           <p className="text-zinc-200 leading-relaxed mb-2">
-            DexPal is the all-in-one data dashboard and rewards hub for trading
-            perpetual futures on decentralized exchanges (DEXs).
+            DexPal is introducing the first{" "}
+            <span className="text-white font-semibold">
+              universal rewards program
+            </span>{" "}
+            for on-chain perpetuals, designed to drive volume and engagement
+            across partner DEXs while rewarding traders with meaningful
+            incentives.
+          </p>
+          <p className="text-zinc-200 leading-relaxed mb-3">
+            By using DexPal referral codes when trading on our partner DEXs,
+            users automatically earn DexPal Rewards based on their trading
+            volume and the affiliate income they generate.
+          </p>
+          <p className="text-zinc-200 leading-relaxed mb-3">
+            All affiliate income is pooled into a prize fund and fully
+            redistributed to eligible participants at the end of each epoch.
+          </p>
+          <div className="bg-purple-900/30 border border-purple-500/30 rounded-lg p-4 mt-4">
+            <p className="text-purple-200 text-sm leading-relaxed">
+              <span className="font-semibold text-white">No complex setup required</span> — simply use an affiliate link or manually enter the code{" "}
+              <code className="bg-purple-800/50 px-2 py-1 rounded text-purple-100 font-mono">DEXPAL</code>{" "}
+              on the DEX interface to start earning.
+            </p>
+          </div>
+        </div>
+
+        {/* Participate in Our Launch */}
+        <div className="bg-gradient-to-r from-emerald-900/20 to-emerald-800/20 border border-emerald-500/20 rounded-xl p-6 max-md:p-4 mb-8">
+          <h3 className="text-xl font-semibold text-emerald-400 mb-3">
+            Participate in Our Launch
+          </h3>
+          <p className="text-zinc-200 leading-relaxed mb-2">
+            The <span className="text-white font-semibold">DexPal Genesis Program</span> is our pre-launch initiative in close collaboration with 10–15 leading DEXs.
+          </p>
+          <p className="text-zinc-200 leading-relaxed mb-2">
+            Our goal is to integrate these partners into the DexPal terminal ahead of the public launch, ensuring a seamless and powerful trading experience for users from day one.
           </p>
           <p className="text-zinc-200 leading-relaxed">
-            We streamline onboarding and enhance the user experience, making
-            DeFi derivatives more accessible to retail traders and CEX
-            users—while empowering DEXs to grow and retain their communities
-            through our universal rewards program.
+            This exclusive beta program offers early access and unique rewards available only to users of participating DEXs.
           </p>
         </div>
 
@@ -394,16 +431,54 @@ const DexPalPartnershipDashboard = () => {
             for on-chain perpetuals, driving volume and engagement for partner
             DEXs while rewarding traders with meaningful incentives.
           </p>
-          <ul className="space-y-2 text-zinc-300 list-disc marker:text-purple-400 ml-6">
-            <li>
-              Users earn DexPal Rewards based on their trading volume and the
-              affiliate income they generate.
-            </li>
-            <li>
-              All affiliate income goes into a prize pool, fully redistributed
-              to eligible participants at the end of each epoch.
-            </li>
-          </ul>
+        </div>
+
+        {/* How It Works */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-white mb-6">How It Works</h2>
+          <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-xl p-6 max-md:p-4 mb-6">
+            <ol className="space-y-4 text-zinc-300 list-decimal marker:text-purple-400 ml-6">
+              <li>Traders use DexPal affiliate codes on any partner DEX.</li>
+              <li>
+                Users earn DexPal Credits based on their trading activity
+                (volume, fees paid).
+              </li>
+              <li>
+                100% of affiliate income is pooled and redistributed to
+                participants at the end of each epoch.
+              </li>
+            </ol>
+          </div>
+
+          {/* Key Mechanics */}
+          <div className="bg-gradient-to-r from-purple-900/20 to-purple-800/20 border border-purple-500/20 rounded-xl p-6 max-md:p-4">
+            <h3 className="text-xl font-semibold text-purple-400 mb-4">
+              Key Mechanics
+            </h3>
+            <ul className="space-y-3 text-zinc-300 list-disc marker:text-purple-400 ml-6">
+              <li>
+                Main metrics used to award credits:{" "}
+                <span className="text-white font-semibold">
+                  affiliate fees paid, referrals, and volume traded
+                </span>
+                .
+              </li>
+              <li>
+                The{" "}
+                <span className="text-white font-semibold">
+                  higher the affiliate % provided by a DEX
+                </span>
+                , the more DexPal Points traders earn from trading on that DEX.
+              </li>
+              <li>
+                Each epoch concludes once the total prize pool reaches its target — the{" "}
+                <span className="text-white font-semibold">
+                  initial goal is $150,000
+                </span>
+                .
+              </li>
+            </ul>
+          </div>
         </div>
 
         <h1 className="text-3xl font-bold text-white mb-8">DexPal Rewards</h1>
@@ -496,7 +571,7 @@ const DexPalPartnershipDashboard = () => {
                 <div className="flex items-center space-x-3">
                   <div className="w-4 h-4 bg-purple-500 rounded"></div>
                   <span className="text-white font-medium">
-                    Points Leaderboards
+                    The Degen Board
                   </span>
                 </div>
                 <span className="text-purple-400 font-bold text-xl">25%</span>
@@ -538,20 +613,23 @@ const DexPalPartnershipDashboard = () => {
               </div>
               <div>
                 <h4 className="text-purple-400 font-semibold mb-2">
-                  Points Leaderboards Competition (25%)
+                  The Degen Board (25%)
                 </h4>
                 <p className="text-zinc-400 leading-relaxed">
+                  For top 100 users with most credits from volume & fees paid.
                   Platform-wide leaderboard competitions based on who has the
                   most points across all DEXs.
                 </p>
               </div>
               <div>
                 <h4 className="text-blue-400 font-semibold mb-2">
-                  DEX Exclusive Points Competitions (25%)
+                  DEX Competitions (25%)
                 </h4>
                 <p className="text-zinc-400 leading-relaxed">
-                  DEX-specific leaderboard competitions for traders with the
-                  most points on individual platforms.
+                  Rewards for top traders in DEX-specific leaderboards
+                  (pro-rata to DEX contribution to prize pool). DEX-specific
+                  leaderboard competitions for traders with the most points on
+                  individual platforms.
                 </p>
               </div>
               <div>
@@ -564,6 +642,95 @@ const DexPalPartnershipDashboard = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Prize Pool Distribution Example */}
+        <div className="mt-12 bg-zinc-800/40 border border-zinc-700/50 rounded-xl p-8 max-md:p-4">
+          <h3 className="text-xl font-semibold text-purple-400 mb-6">
+            Prize Pool Distribution Example
+          </h3>
+          <div className="bg-zinc-900/60 border border-zinc-700/30 rounded-lg p-6 mb-6">
+            <p className="text-zinc-300 mb-4">
+              A user that traded with DexPal Referral codes on 3 different DEXs.
+            </p>
+            <p className="text-zinc-300 mb-2">
+              <span className="text-white font-semibold">Total Fees from affiliate codes: $500</span>
+            </p>
+            <ul className="space-y-2 text-zinc-400 text-sm ml-4">
+              <li>DEX A: $300</li>
+              <li>DEX B: $100</li>
+              <li>DEX C: $100</li>
+            </ul>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="border-b border-zinc-700/50">
+                  <th className="text-left py-3 px-4 text-zinc-400 font-semibold text-sm">
+                    Category
+                  </th>
+                  <th className="text-right py-3 px-4 text-zinc-400 font-semibold text-sm">
+                    Amount
+                  </th>
+                  <th className="text-right py-3 px-4 text-zinc-400 font-semibold text-sm">
+                    Share
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-zinc-700/30">
+                  <td className="py-3 px-4 text-white">Cashback</td>
+                  <td className="py-3 px-4 text-right text-emerald-400 font-semibold">
+                    $200
+                  </td>
+                  <td className="py-3 px-4 text-right text-zinc-400">40%</td>
+                </tr>
+                <tr className="border-b border-zinc-700/30">
+                  <td className="py-3 px-4 text-white">Degen Board</td>
+                  <td className="py-3 px-4 text-right text-purple-400 font-semibold">
+                    $125
+                  </td>
+                  <td className="py-3 px-4 text-right text-zinc-400">25%</td>
+                </tr>
+                <tr className="border-b border-zinc-700/30">
+                  <td className="py-3 px-4 text-white">DEX A Competition</td>
+                  <td className="py-3 px-4 text-right text-blue-400 font-semibold">
+                    $75
+                  </td>
+                  <td className="py-3 px-4 text-right text-zinc-400">15%</td>
+                </tr>
+                <tr className="border-b border-zinc-700/30">
+                  <td className="py-3 px-4 text-white">DEX B Competition</td>
+                  <td className="py-3 px-4 text-right text-blue-400 font-semibold">
+                    $25
+                  </td>
+                  <td className="py-3 px-4 text-right text-zinc-400">5%</td>
+                </tr>
+                <tr className="border-b border-zinc-700/30">
+                  <td className="py-3 px-4 text-white">DEX C Competition</td>
+                  <td className="py-3 px-4 text-right text-blue-400 font-semibold">
+                    $25
+                  </td>
+                  <td className="py-3 px-4 text-right text-zinc-400">5%</td>
+                </tr>
+                <tr className="border-t-2 border-zinc-600">
+                  <td className="py-3 px-4 text-white font-semibold">
+                    Treasury & Operations
+                  </td>
+                  <td className="py-3 px-4 text-right text-orange-400 font-semibold">
+                    $50
+                  </td>
+                  <td className="py-3 px-4 text-right text-zinc-400">10%</td>
+                </tr>
+                <tr className="bg-zinc-900/60">
+                  <td className="py-3 px-4 text-white font-bold">Total</td>
+                  <td className="py-3 px-4 text-right text-white font-bold">$500</td>
+                  <td className="py-3 px-4 text-right text-white font-bold">100%</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -1400,6 +1567,178 @@ Content-Type: application/json
     </div>
   );
 
+  const renderTimelineAndFunding = () => (
+    <div className="space-y-8">
+      <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-xl p-8 max-md:p-4">
+        {/* Page Introduction */}
+        <div className="bg-gradient-to-r from-purple-900/20 to-purple-800/20 border border-purple-500/20 rounded-xl p-6 max-md:p-4 mb-8">
+          <h3 className="text-xl font-semibold text-purple-400 mb-3">
+            Timeline & Funding Milestones
+          </h3>
+          <p className="text-zinc-200 leading-relaxed mb-3">
+            Structured approach to partnership integration with clear milestones and funding opportunities.
+          </p>
+          <div className="bg-purple-900/30 border border-purple-500/30 rounded-lg p-4 mt-4">
+            <p className="text-purple-200 text-sm leading-relaxed">
+              <span className="font-semibold text-white">Note:</span> Funding for Milestones 2–4 is fully reserved for user incentives and your competitions. Amounts are at your discretion, and funds are disbursed after each competition is completed.
+            </p>
+          </div>
+        </div>
+
+        {/* Milestone 1 */}
+        <div className="mb-8">
+          <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-xl p-6 max-md:p-4">
+            <div className="flex items-start justify-between mb-4 max-md:flex-col max-md:gap-4">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-purple-500/25">
+                    1
+                  </div>
+                  <h2 className="text-2xl font-bold text-white">
+                    Milestone 1: Integration
+                  </h2>
+                </div>
+                <p className="text-purple-400 font-semibold text-lg">
+                  2-3 Weeks
+                </p>
+              </div>
+              <div className="bg-emerald-500/20 border border-emerald-500/30 rounded-lg px-4 py-2">
+                <span className="text-emerald-400 font-bold text-xl">
+                  $2,500 - $5,000
+                </span>
+                <p className="text-emerald-300 text-xs mt-1">(Mandatory)</p>
+              </div>
+            </div>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Integrate your DEX's data and APIs into the DexPal terminal.
+            </p>
+            <div className="bg-zinc-900/60 border border-zinc-700/30 rounded-lg p-4">
+              <h4 className="text-white font-semibold mb-3">What's Included:</h4>
+              <ul className="space-y-2 text-zinc-300 list-disc marker:text-purple-400 ml-6">
+                <li>Integration of your DEX's data and APIs into the DexPal terminal</li>
+                <li>Set up affiliate tracking, custom features, and DEXPAL affiliate code</li>
+                <li>Create DEX-specific content — profile, news, incentives, points, and trading pairs</li>
+                <li>Design marketing assets — graphics, posts, threads, and a promo calendar</li>
+                <li>One-time integration fee (varies by complexity of integration with your DEX)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Milestone 2 */}
+        <div className="mb-8">
+          <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-xl p-6 max-md:p-4">
+            <div className="flex items-start justify-between mb-4 max-md:flex-col max-md:gap-4">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-blue-500/25">
+                    2
+                  </div>
+                  <h2 className="text-2xl font-bold text-white">
+                    Milestone 2: Beta Launch
+                  </h2>
+                </div>
+                <p className="text-blue-400 font-semibold text-lg">
+                  3-6 Weeks
+                </p>
+              </div>
+              <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg px-4 py-2">
+                <span className="text-blue-400 font-bold text-xl">
+                  $1,000 - $5,000
+                </span>
+                <p className="text-blue-300 text-xs mt-1">(Optional)</p>
+              </div>
+            </div>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Closed beta with 50–100 users to test APIs, point calculations, and rewards.
+            </p>
+            <div className="bg-zinc-900/60 border border-zinc-700/30 rounded-lg p-4">
+              <ul className="space-y-2 text-zinc-300 list-disc marker:text-blue-400 ml-6">
+                <li>Incentivizes participation with bonus rewards for meeting a minimum trading volume threshold</li>
+                <li>Funds fully reserved to bootstrap early testing and engagement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Milestone 3 */}
+        <div className="mb-8">
+          <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-xl p-6 max-md:p-4">
+            <div className="flex items-start justify-between mb-4 max-md:flex-col max-md:gap-4">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-orange-500/25">
+                    3
+                  </div>
+                  <h2 className="text-2xl font-bold text-white">
+                    Milestone 3: First Trading Competition
+                  </h2>
+                </div>
+                <p className="text-orange-400 font-semibold text-lg">
+                  4-8 Weeks
+                </p>
+              </div>
+              <div className="bg-orange-500/20 border border-orange-500/30 rounded-lg px-4 py-2">
+                <span className="text-orange-400 font-bold text-xl">
+                  $2,500 - $10,000
+                </span>
+                <p className="text-orange-300 text-xs mt-1">(Optional)</p>
+              </div>
+            </div>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Public launch of DexPal and the first official competition, marking Epoch 1 of the rewards program.
+            </p>
+            <div className="bg-zinc-900/60 border border-zinc-700/30 rounded-lg p-4">
+              <ul className="space-y-2 text-zinc-300 list-disc marker:text-orange-400 ml-6">
+                <li>Features include points tracking, leaderboards, and marketing campaigns to boost participation</li>
+                <li>Prize pool combines affiliate fees (25%) and grant funds, ensuring a minimum $10,000 prize</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Milestone 4 */}
+        <div className="mb-8">
+          <div className="bg-zinc-800/40 border border-zinc-700/50 rounded-xl p-6 max-md:p-4">
+            <div className="flex items-start justify-between mb-4 max-md:flex-col max-md:gap-4">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-emerald-500/25">
+                    4
+                  </div>
+                  <h2 className="text-2xl font-bold text-white">
+                    Milestone 4: Ongoing Trading Competitions
+                  </h2>
+                </div>
+                <p className="text-emerald-400 font-semibold text-lg">
+                  Every Epoch
+                </p>
+              </div>
+              <div className="bg-emerald-500/20 border border-emerald-500/30 rounded-lg px-4 py-2">
+                <span className="text-emerald-400 font-bold text-xl">
+                  $5,000 - $50,000
+                </span>
+                <p className="text-emerald-300 text-xs mt-1">(Optional)</p>
+              </div>
+            </div>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              Regular competitions to sustain and grow trading activity on your DEX.
+            </p>
+            <div className="bg-zinc-900/60 border border-zinc-700/30 rounded-lg p-4">
+              <ul className="space-y-2 text-zinc-300 list-disc marker:text-emerald-400 ml-6">
+                <li>Supported by co-marketing campaigns promoting the partnership</li>
+                <li>Prize pools combine affiliate and grant funds, distributed across 4–10 competitions</li>
+                <li>Ensures consistency until affiliate fees independently sustain a $10K+ prize per epoch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <NextButton currentTab={activeTab} />
+    </div>
+  );
+
   // TODO: Actually wire up form to send email to info@dexpal.io
   const renderContact = () => (
     <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-xl p-8 max-md:p-4">
@@ -1521,6 +1860,8 @@ Content-Type: application/json
         return renderUniversalRewards();
       case "requirements":
         return renderIntegrationRequirements();
+      case "timeline":
+        return renderTimelineAndFunding();
       case "api":
         return renderAPIRequirements();
       case "roadmap":
