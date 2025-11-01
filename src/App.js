@@ -22,6 +22,7 @@ function App() {
             path="/requirements"
             element={<DexPalPartnershipDashboard />}
           />
+          <Route path="/timeline" element={<DexPalPartnershipDashboard />} />
           <Route path="/api" element={<DexPalPartnershipDashboard />} />
           <Route path="/roadmap" element={<DexPalPartnershipDashboard />} />
           <Route path="/contact" element={<DexPalPartnershipDashboard />} />
