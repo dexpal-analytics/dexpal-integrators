@@ -1650,7 +1650,7 @@ Content-Type: application/json
               </div>
             </div>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Closed beta with minimum 50–100 users per participating DEX to test APIs, point calculations, and rewards.
+              Closed beta with minimum 50-100 users per participating DEX to test APIs, point calculations, and rewards.
             </p>
             <div className="bg-zinc-900/60 border border-zinc-700/30 rounded-lg p-4">
               <ul className="space-y-2 text-zinc-300 list-disc marker:text-blue-400 ml-6">
