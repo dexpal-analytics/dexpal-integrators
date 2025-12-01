@@ -806,11 +806,6 @@ const DexPalPartnershipDashboard = () => {
             <h3 className="text-xl font-semibold text-purple-400 mb-4">
               Intended Distribution at End of Each Epoch
             </h3>
-            <p className="text-zinc-300 mb-6 leading-relaxed">
-              DexPal will distribute rewards at the end of each epoch. Full
-              details of point program and epoch lengths to be revealed October
-              30th.
-            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="space-y-4">
